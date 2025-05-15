@@ -6,11 +6,45 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A2597E702DD582CD0085DFDC /* AMplify_Sufi_watchOS Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A2597E662DD582CD0085DFDC /* AMplify_Sufi_watchOS Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A2597E6E2DD582CD0085DFDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2FBAE282DCE75C700B652F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A2597E652DD582CD0085DFDC;
+			remoteInfo = "AMplify_Sufi_watchOS Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A2597E712DD582CD0085DFDC /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A2597E702DD582CD0085DFDC /* AMplify_Sufi_watchOS Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		A2597E662DD582CD0085DFDC /* AMplify_Sufi_watchOS Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AMplify_Sufi_watchOS Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2FBAE302DCE75C700B652F8 /* AMplify_Sufi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AMplify_Sufi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		A2597E672DD582CD0085DFDC /* AMplify_Sufi_watchOS Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "AMplify_Sufi_watchOS Watch App";
+			sourceTree = "<group>";
+		};
 		A2FBAE322DCE75C700B652F8 /* AMplify_Sufi */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = AMplify_Sufi;
@@ -19,6 +53,13 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A2597E632DD582CD0085DFDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A2FBAE2D2DCE75C700B652F8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -33,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				A2FBAE322DCE75C700B652F8 /* AMplify_Sufi */,
+				A2597E672DD582CD0085DFDC /* AMplify_Sufi_watchOS Watch App */,
 				A2FBAE312DCE75C700B652F8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				A2FBAE302DCE75C700B652F8 /* AMplify_Sufi.app */,
+				A2597E662DD582CD0085DFDC /* AMplify_Sufi_watchOS Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,6 +91,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A2597E652DD582CD0085DFDC /* AMplify_Sufi_watchOS Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2597E742DD582CD0085DFDC /* Build configuration list for PBXNativeTarget "AMplify_Sufi_watchOS Watch App" */;
+			buildPhases = (
+				A2597E622DD582CD0085DFDC /* Sources */,
+				A2597E632DD582CD0085DFDC /* Frameworks */,
+				A2597E642DD582CD0085DFDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A2597E672DD582CD0085DFDC /* AMplify_Sufi_watchOS Watch App */,
+			);
+			name = "AMplify_Sufi_watchOS Watch App";
+			packageProductDependencies = (
+			);
+			productName = "AMplify_Sufi_watchOS Watch App";
+			productReference = A2597E662DD582CD0085DFDC /* AMplify_Sufi_watchOS Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
 		A2FBAE2F2DCE75C700B652F8 /* AMplify_Sufi */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A2FBAE3B2DCE75C700B652F8 /* Build configuration list for PBXNativeTarget "AMplify_Sufi" */;
@@ -55,10 +120,12 @@
 				A2FBAE2C2DCE75C700B652F8 /* Sources */,
 				A2FBAE2D2DCE75C700B652F8 /* Frameworks */,
 				A2FBAE2E2DCE75C700B652F8 /* Resources */,
+				A2597E712DD582CD0085DFDC /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A2597E6F2DD582CD0085DFDC /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				A2FBAE322DCE75C700B652F8 /* AMplify_Sufi */,
@@ -80,6 +147,9 @@
 				LastSwiftUpdateCheck = 1630;
 				LastUpgradeCheck = 1630;
 				TargetAttributes = {
+					A2597E652DD582CD0085DFDC = {
+						CreatedOnToolsVersion = 16.3;
+					};
 					A2FBAE2F2DCE75C700B652F8 = {
 						CreatedOnToolsVersion = 16.3;
 					};
@@ -100,11 +170,19 @@
 			projectRoot = "";
 			targets = (
 				A2FBAE2F2DCE75C700B652F8 /* AMplify_Sufi */,
+				A2597E652DD582CD0085DFDC /* AMplify_Sufi_watchOS Watch App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A2597E642DD582CD0085DFDC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A2FBAE2E2DCE75C700B652F8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -115,6 +193,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A2597E622DD582CD0085DFDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A2FBAE2C2DCE75C700B652F8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -124,7 +209,73 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		A2597E6F2DD582CD0085DFDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A2597E652DD582CD0085DFDC /* AMplify_Sufi_watchOS Watch App */;
+			targetProxy = A2597E6E2DD582CD0085DFDC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		A2597E722DD582CD0085DFDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SVCQS3466Q;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = AMplify_Sufi_watchOS;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "name.sufiarifin.AMplify-Sufi";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "name.sufiarifin.AMplify-Sufi.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.4;
+			};
+			name = Debug;
+		};
+		A2597E732DD582CD0085DFDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SVCQS3466Q;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = AMplify_Sufi_watchOS;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "name.sufiarifin.AMplify-Sufi";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "name.sufiarifin.AMplify-Sufi.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.4;
+			};
+			name = Release;
+		};
 		A2FBAE392DCE75C700B652F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -305,6 +456,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A2597E742DD582CD0085DFDC /* Build configuration list for PBXNativeTarget "AMplify_Sufi_watchOS Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2597E722DD582CD0085DFDC /* Debug */,
+				A2597E732DD582CD0085DFDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A2FBAE2B2DCE75C700B652F8 /* Build configuration list for PBXProject "AMplify_Sufi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
