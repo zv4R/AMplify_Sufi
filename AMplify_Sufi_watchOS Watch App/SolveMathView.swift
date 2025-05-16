@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SolveMathView: View {
     @State private var currentDate = "JUN 18"
-    @State private var currentTime = "04:30"
+    @State private var currentTime = "04:35"
     @State private var mathProblem = "12x10+13-9=?"
     @State private var enteredNumbers: [String] = [] // Array to hold entered digits
     

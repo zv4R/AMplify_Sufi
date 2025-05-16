@@ -10,7 +10,7 @@ import SwiftUI
 struct AlarmView: View {
     @State private var alarmTime = "04:30"
     @State private var currentDate = "JUN 18"
-    @State private var currentTime = "09:20"
+    @State private var currentTime = "04:30"
 
     var body: some View {
         VStack {
@@ -56,7 +56,7 @@ struct AlarmView: View {
                 .frame(maxWidth: 170, maxHeight: 40)
                 .background(Color.green)
                 .cornerRadius(40)
-                .padding(.top, 15)
+                .padding(.top, 8)
 
                 Button {
                     print("Step Count tapped")

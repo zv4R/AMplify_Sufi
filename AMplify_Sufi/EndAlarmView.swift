@@ -1,16 +1,16 @@
 //
-//  AlarmView.swift
+//  EndAlarmView.swift
 //  AMplify_Sufi
 //
-//  Created by Sufi Arifin on 10/05/25.
+//  Created by Sufi Arifin on 16/05/25.
 //
 
 import SwiftUI
 
-struct AlarmView: View {
+struct EndAlarmView: View {
     let dates = ["16", "17", "18", "19", "20"]
     @State private var selectedDateIndex = 2 // Index for "18 FRI"
-    let alarmTime = "04.30"
+    let alarmTime = "04.40"
 
     let tealColor = Color(red: 0/255, green: 159/255, blue: 184/255)
     let lightGrayBackground = Color(red: 255/255, green: 255/255, blue: 255/255)
@@ -73,31 +73,42 @@ struct AlarmView: View {
             .padding(.bottom, 70)
 
             VStack(spacing: 20) {
-                Button(action: {
-                    // Action for Solve Math
-                    print("Solve Math tapped")
-                }) {
-                    Text("Solve Math")
-                        .font(.system(size: 30, weight: .bold))
-                        .foregroundColor(.white)
-                        .frame(maxWidth: .infinity, minHeight: 70)
-                        .background(tealColor)
-                        .cornerRadius(20)
-                        .padding(.horizontal, 55)
+                Text("Great, Sufi")
+                    .font(.system(size: 30, weight: .bold))
+                    .foregroundColor(.orange)
+                    .padding(.top, -10)
+                
+                Text("You're Awake!")
+                    .font(.system(size: 30, weight: .bold))
+                    .foregroundColor(.orange)
+                    .padding(.top, -23)
+                
+                HStack {
+                    Text("+50 XP")
+                        .font(.system(size: 20, weight: .bold))
+                        .foregroundColor(tealColor)
+                    
+                    Text("added for your")
+                        .font(.system(size: 20, weight: .regular))
+                        .foregroundColor(tealColor)
                 }
-
+                Text("Punctuality!")
+                    .font(.system(size: 20, weight: .regular))
+                    .foregroundColor(tealColor)
+                    .padding(.top, -20)
+                
                 Button(action: {
-                    // Action for Step Count
-                    print("Step Count tapped")
+                    // Action for Next Daily Routine
+                    print("Next to Daily Routines tapped")
                 }) {
-                    Text("Step Count")
-                        .font(.system(size: 30, weight: .bold))
+                    Text("Next to Daily Routines")
+                        .font(.system(size: 23, weight: .semibold))
                         .foregroundColor(.white)
                         .frame(maxWidth: .infinity, minHeight: 70)
                         .background(tealColor)
                         .cornerRadius(20)
-                        .padding(.horizontal, 55)
-                        .padding(.vertical, -10)
+                        .padding(.horizontal, 10)
+                        .padding(.top, -1)
                 }
             }
             .padding(.horizontal)
@@ -111,9 +122,9 @@ struct AlarmView: View {
     }
 }
 
-struct AlarmView_Previews: PreviewProvider {
+struct EndAlarmView_Previews: PreviewProvider {
     static var previews: some View {
-        AlarmView()
+        EndAlarmView()
     }
 }
 

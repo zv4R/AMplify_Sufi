@@ -10,7 +10,7 @@ import SwiftUI
 struct StepCountView: View {
     @State private var currentDate = Date()
     @State private var timerSeconds: TimeInterval = 300 // Initial 5 minutes in seconds
-    @State private var steps: Int = 150
+    @State private var steps: Int = 250
     let stepGoal: Int = 750
 
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
