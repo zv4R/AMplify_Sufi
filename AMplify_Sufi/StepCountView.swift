@@ -120,7 +120,7 @@ struct StepCountView: View {
                     .padding(.horizontal, 30)
                     Spacer()
                 }
-                .background(RoundedRectangle(cornerRadius: 0).fill(.opacity(0.30)))
+                .background(RoundedRectangle(cornerRadius: 0).fill(.opacity(0.5)))
                 .padding(.top, 50)
         }
             .frame(maxWidth: .infinity, maxHeight: .infinity)

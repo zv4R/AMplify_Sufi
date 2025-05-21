@@ -63,6 +63,7 @@ struct SolveMathView: View {
                     alignment: .bottom
                 )
                 .padding(.horizontal)
+                .disabled(true)
             
             VStack {
                 HStack {
