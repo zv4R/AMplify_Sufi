@@ -11,7 +11,7 @@ import SwiftUI
 struct AMplify_SufiApp: App {
     var body: some Scene {
         WindowGroup {
-            AlarmView()
+                AlarmView()
         }
     }
 }

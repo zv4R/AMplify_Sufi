@@ -8,11 +8,22 @@
 import SwiftUI
 
 struct SolveMathView: View {
-    @State private var currentDate = "JUN 18"
+    @State private var currentDate = Date()
     @State private var currentTime = "04:35"
     @State private var mathProblem = "12x10+13-9=?"
     @State private var enteredNumbers: [String] = [] // Array to hold entered digits
+    let dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MMM dd"
+        return formatter
+    }()
     
+    let timeFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "HH:mm"
+        return formatter
+    }()
+
     // Computed property to display the entered number string
     private var displayedAnswer: String {
         enteredNumbers.joined()
@@ -21,17 +32,16 @@ struct SolveMathView: View {
     var body: some View {
         VStack {
             HStack {
-                Text(currentDate)
+                Text(dateFormatter.string(from: currentDate).uppercased())
                     .font(.caption)
                     .foregroundColor(.gray)
                 Spacer()
-                Text(currentTime)
+                Text(timeFormatter.string(from: currentDate))
                     .font(.caption)
-                    .foregroundColor(.white)
             }
             .padding(.horizontal)
             .padding(.vertical, 1)
-            .padding(.top, 1)
+            .padding(.top, -3)
             
             Text(mathProblem)
                 .font(.system(size: 30, weight: .semibold, design: .rounded))

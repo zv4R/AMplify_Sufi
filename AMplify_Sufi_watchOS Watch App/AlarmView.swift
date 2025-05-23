@@ -9,23 +9,34 @@ import SwiftUI
 
 struct AlarmView: View {
     @State private var alarmTime = "04:30"
-    @State private var currentDate = "JUN 18"
-    @State private var currentTime = "04:30"
+    @State private var currentDate = Date()
+    @State private var currentTime = Date()
 
+    let dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MMM dd"
+        return formatter
+    }()
+    
+    let timeFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "HH:mm"
+        return formatter
+    }()
+    
     var body: some View {
         VStack {
             HStack {
-                Text(currentDate)
+                Text(dateFormatter.string(from: currentDate).uppercased())
                     .font(.caption)
                     .foregroundColor(.gray)
                 Spacer()
-                Text(currentTime)
+                Text(timeFormatter.string(from: currentDate))
                     .font(.caption)
-                    .foregroundColor(.white)
             }
             .padding(.horizontal)
             .padding(.vertical, 1)
-            .padding(.top, 1)
+            .padding(.top, -5)
 
             Text("Wake Up Alarm")
                 .font(.headline)

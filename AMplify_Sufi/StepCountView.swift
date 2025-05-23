@@ -123,9 +123,10 @@ struct StepCountView: View {
                 .background(RoundedRectangle(cornerRadius: 0).fill(.opacity(0.5)))
                 .padding(.top, 50)
         }
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(lightGrayBackground)
-            .edgesIgnoringSafeArea(.bottom)
+        //.navigationBarBackButtonHidden(true)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(lightGrayBackground)
+        .edgesIgnoringSafeArea(.bottom)
         }
     }
     

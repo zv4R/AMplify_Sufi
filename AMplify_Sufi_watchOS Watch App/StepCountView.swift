@@ -50,7 +50,7 @@ struct StepCountView: View {
             }
             .padding(.horizontal)
             .padding(.vertical, 1)
-            .padding(.top, 1)
+            .padding(.top, 5)
 
             HStack {
                 Image(systemName: "timer")

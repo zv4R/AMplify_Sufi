@@ -91,6 +91,8 @@ struct SolveMathView: View {
             .padding(.top, 55)
             Spacer()
         }
+        //.navigationBarBackButtonHidden(true)
+    
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(lightGrayBackground)
         .edgesIgnoringSafeArea(.bottom)
