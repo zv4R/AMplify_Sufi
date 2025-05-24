@@ -86,9 +86,9 @@ struct StepCountView: View {
                         .foregroundColor(.white)
                         .padding(.horizontal, 30)
                         .padding(.bottom, 8)
-                        .padding(.top, 35)
+                        .padding(.top, 15)
                     
-                    VStack (spacing: 15){
+                    VStack (spacing: 8){
                         HStack (alignment: .lastTextBaseline) {
                             Text("Goals")
                                 .font(.system(size: 23, weight: .medium, design: .rounded))
@@ -118,6 +118,7 @@ struct StepCountView: View {
                         }
                     }
                     .padding(.horizontal, 30)
+                    .padding(.vertical, -5)
                     Spacer()
                 }
                 .background(RoundedRectangle(cornerRadius: 0).fill(.opacity(0.5)))

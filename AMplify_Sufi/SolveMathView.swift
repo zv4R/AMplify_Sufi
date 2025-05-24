@@ -47,12 +47,12 @@ struct SolveMathView: View {
             Text(problemMath)
                 .font(.system(size: 46, weight: .bold, design: .rounded))
                 .foregroundColor(.white)
-                .padding(.top, 70)
+                .padding(.top, 50)
             
             TextField("Type your answer", text: $userAnswer)
                 .font(.system(size: 25, weight: .light, design: .default)).italic()
                 .keyboardType(.numberPad)
-                .padding(.top, 90)
+                .padding(.top, 60)
                 .padding(.bottom, 15)
                 .padding(.horizontal, 90)
                 .overlay(
@@ -88,7 +88,7 @@ struct SolveMathView: View {
                 }
             }
             .padding(.horizontal)
-            .padding(.top, 55)
+            .padding(.top, 25)
             Spacer()
         }
         //.navigationBarBackButtonHidden(true)

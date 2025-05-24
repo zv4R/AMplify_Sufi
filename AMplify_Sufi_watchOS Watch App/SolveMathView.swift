@@ -46,7 +46,7 @@ struct SolveMathView: View {
             Text(mathProblem)
                 .font(.system(size: 30, weight: .semibold, design: .rounded))
                 .padding(.horizontal)
-                .padding(.top, -1)
+                .padding(.top, 10)
             
             // Display the entered answer
             Text(displayedAnswer)
@@ -60,7 +60,7 @@ struct SolveMathView: View {
                 )
                 .padding(.horizontal, 20)
                 .padding(.vertical, 5)
-                .padding(.top, -5)
+                .padding(.top, -20)
                 .padding(.bottom, -5)
             // Custom number pad
             VStack {

@@ -40,7 +40,7 @@ struct AlarmView: View {
                 }
                 .padding(.horizontal)
                 .padding(.vertical, 1)
-                .padding(.top, 5)
+                .padding(.top, 6)
                 
                 Text("Wake Up Alarm")
                     .font(.headline)

@@ -60,27 +60,28 @@ struct StepCountView: View {
                     .font(.caption2)
             }
             .padding(.vertical, 5)
-            .padding(.bottom, 5)
+            .padding(.bottom, 3)
+            .padding(.top, 10)
 
             ZStack {
                 // Background Circular Track
                 Circle()
-                    .stroke(lineWidth: 25)
-                    .frame(width: 100, height: 100)
+                    .stroke(lineWidth: 23)
+                    .frame(width: 90, height: 90)
                     .opacity(0.3)
                     .foregroundColor(Color.gray)
 
                 // Foreground Progress Track
                 Circle()
                     .trim(from: 0.0, to: CGFloat(progress))
-                    .stroke(style: StrokeStyle(lineWidth: 20, lineCap: .round))
+                    .stroke(style: StrokeStyle(lineWidth: 18, lineCap: .round))
                     .foregroundColor(Color.orange)
                     .rotationEffect(Angle(degrees: -90)) // Start from the top
 
                 Text("\(steps)")
-                    .font(.system(size: 35, weight: .semibold, design: .rounded))
+                    .font(.system(size: 32, weight: .semibold, design: .rounded))
             }
-            .padding(.bottom, 15)
+            .padding(.bottom, 10)
 
             VStack(alignment: .center) {
                 Text("Goals : \(stepGoal)")
