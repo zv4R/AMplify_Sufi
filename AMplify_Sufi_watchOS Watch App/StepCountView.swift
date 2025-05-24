@@ -41,9 +41,9 @@ struct StepCountView: View {
     var body: some View {
         VStack {
             HStack {
-                Text(dateFormatter.string(from: currentDate).uppercased())
-                    .font(.caption)
-                    .foregroundColor(.gray)
+                //Text(dateFormatter.string(from: currentDate).uppercased())
+                    //.font(.caption)
+                    //.foregroundColor(.gray)
                 Spacer()
                 Text(timeFormatter.string(from: currentDate))
                     .font(.caption)
