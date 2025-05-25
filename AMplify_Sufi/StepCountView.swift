@@ -7,6 +7,8 @@
 
 
 import SwiftUI
+import HealthKit
+import CoreMotion
 
 struct StepCountView: View {
     // Custom colors
@@ -19,6 +21,11 @@ struct StepCountView: View {
     let goal: Int = 750
     let distance: Double = 0.50
     let timerString = "00.05.00"
+    
+    @StateObject private var pedometerManager = PedometerManager()
+    
+    @State private var stepCount: Int = 0
+        private let healthKitManager = HealthKitManager()
     
     var body: some View {
         VStack {
@@ -56,7 +63,7 @@ struct StepCountView: View {
                 let progress = Double(steps) / Double(goal)
                 Circle()
                     .trim(from: 0, to: CGFloat(progress))
-                    .stroke(style: StrokeStyle(lineWidth: 45, lineCap: .round))
+                    .stroke(style: StrokeStyle(lineWidth: 35, lineCap: .round))
                     .foregroundColor(.orange)
                     .frame(width: 200, height: 200)
                     .rotationEffect(.degrees(-90))
